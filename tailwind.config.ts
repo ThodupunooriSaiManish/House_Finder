@@ -1,4 +1,15 @@
 import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./client/**/*.{js,jsx,ts,tsx}",
+    "./client/index.html",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/typography')],
+}
 
 export default {
   darkMode: ["class"],
